@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niceme</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    body{
+        overflow-x: hidden;
+        background: #fff;
+        min-height: 100vh;
+    }
+    header{
+        position: fixed;
+        background: linear-gradient(to top, #fff, #ddd);
+        top:0;
+        left:0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+    .logo{
+        color: #3e0a22;
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    .nav li{
+        list-style: none;
+    }
+    .nav li a{
+        text-decoration: none;
+        padding: 6px 15px;
+        color:#112434;
+        border-radius: 20px;
+    }
+    nav li a:hover, nva li a.active{
+        background: #112434;
+        color: #fff;
+    }
+    .parallax{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .parallax img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+    }
+    .parallax::before {
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        width: 110%;
+        height: 50px;
+        z-index: 1000;
+        filter: blur(8px);
+        background: linear-gradient(to bottom,hsl(195, 80%, 26%),  #112434);
+    }
+    #title{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4em;
+        color: #112434;
+    }
+    .content{
+        position: relative;
+        padding: 50px 100px;
+        background: #112434;
+        color: #fff;
+    }
+    .content h2{
+        font-size: 3em;
+        margin:15px;
+    }
+    .content p{
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">Niceme</a>
+        <ul class="nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">購物車</a></li>
+            <li></li>
+        </ul>
+    </header>
+    <section class="parallax">
+        <h2 id="title">Find yourself as me</h2>
+        <img src="img/monutain_01.png" id="m1">
+        <img src="img/trees_02.png" id="tree2">
+        <img src="img/monutain_02.png" id="m2">
+        <img src="img/trees_01.png" id="tree1">
+        <img src="img/people.png" id="people">
+        <img src="img/plants.png" id="plant">
+    </section>
+    <section class="content">
+        <h2>Parallax Scrolling</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odit culpa autem tenetur neque harum id porro architecto, eveniet tempora delectus voluptatibus aliquam quasi facere, quam exercitationem excepturi nam commodi.
+        Nemo reiciendis odit odio necessitatibus consectetur eum, cum, vitae ut laudantium praesentium est earum alias laboriosam eligendi quos dolores aliquid atque repellendus suscipit ex hic facilis! Enim saepe maiores quasi.
+        Ipsam sunt tempora illo! Dolore alias ipsam consequuntur deserunt tempora facere deleniti illo quo accusamus quam, totam eligendi dicta fugit dolor cumque modi omnis fuga nisi excepturi. Similique, quos enim.<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at ratione aliquid quae perferendis quod eveniet, soluta molestiae beatae. Optio, quos facilis quia id est consequatur molestiae obcaecati corporis libero!
+        Et, itaque fugit earum, repellat asperiores id porro officia corporis deleniti perferendis, quasi fugiat commodi voluptas nihil expedita nostrum delectus nesciunt tenetur autem ipsum eaque ex. Similique nobis possimus sunt.
+        Laborum neque repellat hic mollitia! Consequuntur dolores officiis exercitationem voluptatem cumque laboriosam obcaecati nostrum cupiditate unde accusamus corrupti possimus, voluptates similique magni? Mollitia voluptatibus voluptas laborum tempora sequi minima a!
+        Possimus libero assumenda doloremque accusantium et nemo magni mollitia iure cum pariatur ut dolorum atque repudiandae, fugiat, autem consequatur placeat esse repellat maxime quas iusto. Quam quo fuga reprehenderit dolorem?
+        Tenetur, placeat nobis! Consequatur quos architecto voluptas sunt, cumque autem aliquid atque a, necessitatibus cupiditate unde minus nobis. Corporis enim distinctio accusamus laborum iste cumque nam animi! Ducimus, alias accusantium!<br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis iusto quidem magni tempore dicta omnis voluptate? Enim laboriosam ut suscipit ullam saepe veniam iste. Iure harum assumenda quis voluptates voluptatem!
+        Veniam libero iusto, impedit obcaecati ex iure voluptate ullam, consequatur at fuga nostrum rerum vel corporis sit aliquam eius quos adipisci ipsum laudantium officiis cupiditate recusandae. Facilis laborum aliquid quia?
+        Molestias aperiam doloribus nulla blanditiis corporis impedit dolorum est voluptas ipsum ratione assumenda, suscipit vitae quod numquam officiis ipsam dignissimos fugiat sunt aliquam laudantium cum architecto repudiandae esse asperiores. Nemo!<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit at ut voluptatum et? Maxime quidem harum, voluptatem iusto reiciendis ullam. Possimus illum officiis temporibus nam dignissimos soluta assumenda sunt debitis?
+        Maiores qui repellat architecto expedita quisquam quas illum molestiae nulla incidunt quibusdam! Autem esse nemo tempora hic doloribus neque quo nisi facere iste possimus quisquam nesciunt, reiciendis quod! Sit, tempora.<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vitae ducimus vel pariatur praesentium suscipit cupiditate quos modi consequuntur, quasi ex dignissimos autem similique nihil dolorum tempora. Qui, beatae voluptatum.
+        Tenetur adipisci repellendus aut veritatis! Temporibus voluptate nesciunt qui nihil, delectus non esse alias amet, quod nostrum ipsa quo pariatur libero doloribus similique quae, officia incidunt rerum? Quae, quasi ratione?
+        Beatae repellat rerum earum, ratione distinctio ad odio perferendis aliquid optio, tempore id ex, mollitia sunt laudantium officiis suscipit! Quasi nemo aliquam modi error quam commodi delectus sed ad totam!
+    </p>
+    </section>
+
+    <script>
+        gsap.to("#m1", {
+           scale:2, 
+           duration:5,
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true,
+             markers: true
+           }
+        });
+
+        gsap.to("#people", {
+            x:-300,
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+
+        gsap.to("#tree2", {
+           x:-300, 
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#m2", {
+           x:300, 
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#tree1", {
+           y:300, 
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#plant", {
+           x:-300, 
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#title", {
+           color: "red", 
+           rotation: 360,
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+    </script>
+</body>
+</html>
