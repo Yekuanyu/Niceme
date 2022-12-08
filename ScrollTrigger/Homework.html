@@ -68,7 +68,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 100%;
+        width: 60%;
         pointer-events: none;
     }
     .parallax::before {
@@ -117,12 +117,7 @@
     </header>
     <section class="parallax">
         <h2 id="title">Find yourself as me</h2>
-        <img src="img/monutain_01.png" id="m1">
-        <img src="img/trees_02.png" id="tree2">
-        <img src="img/monutain_02.png" id="m2">
-        <img src="img/trees_01.png" id="tree1">
-        <img src="img/people.png" id="people">
-        <img src="img/plants.png" id="plant">
+        <img src="img/cat.PNG" id="cat">
     </section>
     <section class="content">
         <h2>Parallax Scrolling</h2>
@@ -199,7 +194,7 @@
            }
         });
 
-        gsap.to("#plant", {
+        gsap.to("#cat", {
            x:-300, 
            scrollTrigger:{
              trigger: "#title",
