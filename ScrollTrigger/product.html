@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>product</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            overflow-x: hidden;
+            background: rgb(255, 236, 213);
+            min-height: 100vh;
+        }
+        header{
+            position: fixed;
+            background: linear-gradient(to top, rgb(255, 236, 213), rgb(221, 221, 221));
+            top:0;
+            left: -65px;
+            width: 108%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .logo{
+            color: #3e0a22;
+            font-weight: 700;
+            font-size: 2em;
+            text-decoration: none;
+        }
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:5px;
+        }
+        .nav li{
+            list-style: none;
+        }
+        .nav li a{
+            text-decoration: none;
+            padding: 6px 15px;
+            color:#112434;
+            border-radius: 50px;
+        }
+        nav li a:hover, nva li a.active{
+            background: #112434;
+            color: #fff;
+        }
+        .parallax{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .parallax img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+        }
+        .parallax::before {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            width: 110%;
+            height: 50px;
+            z-index: 1000;
+            filter: blur(8px);
+            background: linear-gradient(to bottom,hsl(195, 80%, 26%),  #112434);
+        }
+        #title{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            rotation: 360;
+            font-size: 6em;
+            color: #1476c7;
+        }
+        .content{
+            position: relative;
+            padding: 50px 100px;
+            background: #0c3a2a;
+            color: rgb(157, 156, 156);
+        }
+        .content h2{
+            font-size: 3em;
+            margin:15px;
+        }
+        .content p{
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        .container{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+            padding: 50px 80px;
+        }
+        .container h2{
+            color: #000000;
+            font-weight: 700;
+            font-size: 1.5em;
+            text-decoration: none;
+            padding: 6px 80px;
+        }
+        .container p{
+            color: #000000;
+            font-weight: 700;
+            font-size: 1em;
+            text-decoration: none;
+            padding: 6px 75px;
+        }
+        .button{
+            color: #0a466d;
+            width:80px; 
+            height:25px;
+            margin-left:60px;
+            margin-top:10px;
+            font-weight: 700;
+            font-size: 0.5em;
+            text-decoration: none;
+            padding: 1px 5px;
+        }
+    </style>
+<body>
+    <header>
+        <a href="#" class="logo">Niceme</a>
+        <ul class="nav">
+            <li><a href="Homework.html" class="active">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">購物車</a></li>
+        </ul>
+    </header>
+    <div class="container">     
+        <button><img src="img/ex.jpeg" class="rounded" alt="one" width="300" height="300"></button>  
+        <h2>花香</h2>
+        <p>NT880</p>
+        <button type="button" class="button">加入購物車</button>
+    </div>
+</body>
+</html>
