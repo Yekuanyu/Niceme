@@ -116,10 +116,10 @@
     </header>
     <section class="parallax">
         <h2 id="title">Find yourself as me</h2>
-        <img src="img/rabbit.png" id="rabbit">
         <img src="img/cat1.png" id="cat1">
-        <img src="img/cat2.png" id="cat2">
+        <img src="img/rabbit.png" id="rabbit">
         <img src="img/dog.png" id="dog">
+        <img src="img/cat2.png" id="cat2">
 
     </section>
     <section class="content">
@@ -153,7 +153,7 @@
            }
         });
 
-        gsap.to("#people", {
+        gsap.to("#cat1", {
             x:-300,
            scrollTrigger:{
              trigger: "#title",
@@ -174,7 +174,7 @@
            }
         });
 
-        gsap.to("#m2", {
+        gsap.to("#cat2", {
            x:300, 
            scrollTrigger:{
              trigger: "#title",
@@ -184,18 +184,8 @@
            }
         });
 
-        gsap.to("#tree1", {
-           y:300, 
-           scrollTrigger:{
-             trigger: "#title",
-             start: "100px 50%",
-             end: "top 10%",
-             scrub: true
-           }
-        });
-
-        gsap.to("#cat", {
-           x:-300, 
+        gsap.to("#dog", {
+           x:300, 
            scrollTrigger:{
              trigger: "#title",
              start: "100px 50%",
