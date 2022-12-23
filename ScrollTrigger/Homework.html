@@ -111,7 +111,8 @@
             <li><a href="#" class="active">Home</a></li>
             <li><a href="product.html">Product</a></li>
             <li><a href="#">About us</a></li>
-            <li><a href="#">購物車</a></li>
+            <li><a href="#"><img src= "img/cart.png" width="30" height="30"
+            /></a></li>
         </ul>
     </header>
     <section class="parallax">
@@ -141,17 +142,6 @@
     </section>
 
     <script>
-        gsap.to("#m1", {
-           scale:2, 
-           duration:5,
-           scrollTrigger:{
-             trigger: "#title",
-             start: "100px 50%",
-             end: "top 10%",
-             scrub: true,
-             markers: true
-           }
-        });
 
         gsap.to("#cat1", {
             x:-300,
