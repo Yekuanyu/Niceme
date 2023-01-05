@@ -17,20 +17,24 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
-    <!-- Theme CSS -->
-    <link href="index.css" rel="stylesheet">
-
+     <!-- Theme CSS -->
+     <link href="index.css" rel="stylesheet">
     <title>product</title>
-</head>
+  </head>
+
+<title>My Cart</title>
     
+  
+
+
 <body>
     <header>
         <a href="Homework.html" class="logo">Niceme</a>
         <ul class="nav">
             <li><a href="Homework.html" class="active">Home</a></li>
             <li><a href="product.html">Product</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="index.html"><img src= "img/cart.png" width="30" height="30"
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="#"><img src= "img/cart.png" width="30" height="30"
               /></a></li>
         </ul>
     </header>
@@ -42,67 +46,146 @@
     <p align="center">奈覓 Niceme 最好的我</p><br>
     <p align="center">“找尋氣味的秘密，遇見最好的自己。”</p><br>
     <p align="center">透過香水間綻放自我的獨特性</p>
-      <div class="col-md-12 col-lg-4 col-xxl-3">
-        <div class="card ">
-          <img src="./img/ex.jpeg" alt="" class="card-img-top" />
-          <div class="card-body">
-            <h3 class="card-title">花香調</h3>
-            <h3 class="card-title">NT880</h3>
-            <p class="card-text">
-              前調：粉紅胡椒、綠柑橘、黑醋栗<br/>
-              中調：千葉玫瑰、天竺葵<br/>
-              後調：廣藿香、白麝香、橡苔<br/>
-            </p>
-            <button class="btn-primary">加入購物車</button>
-          </div>
-        </div>
+
+
+  <div class="page-header">
+      <div style="float: right; cursor: pointer;">
+        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
       </div>
-      <div class="col-md-12 col-lg-4 col-xxl-3">
-        <div class="card ">
-          <img src="./img/果香_活潑_狗.jpg" alt="" class="card-img-top" />
-          <div class="card-body">
-            <h3 class="card-title">果香調</h3>
-            <h3 class="card-title">NT880</h3>
-            <p class="card-text">
-                前調：無花果葉<br/>
-                中調：無花果乳<br/>
-                後調：無花果木、白雪松<br/>
-            </p>
-            <button class="btn-primary">加入購物車</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 col-lg-4 col-xxl-3">
-        <div class="card ">
-          <img src="./img/ex.jpeg" alt="" class="card-img-top" />
-          <div class="card-body">
-            <h3 class="card-title">奶香調</h3>
-            <h3 class="card-title">NT880</h3>
-            <p class="card-text">
-                前調：香檸檬、小荳蔻、粉紅胡椒<br/>
-                中調：茉莉、晚香玉、依蘭<br/>
-                後調：琥珀、安息香脂、椰子<br/>
-            </p>
-            <button class="btn-primary">加入購物車</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 col-lg-4 col-xxl-3">
-        <div class="card ">
-          <img src="./img/木質_沈穩_藍貓.jpg" alt="" class="card-img-top" />
-          <div class="card-body">
-            <h3 class="card-title">木質調</h3>
-            <h3 class="card-title">NT880</h3>
-            <p class="card-text">
-                前調：皮革<br/>
-                中調：檀香木<br/>
-                後調：雪松、香根草<br/>
-            </p>
-            <button class="btn-primary">加入購物車</button>
-          </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-lg-4 col-xxl-3">
+      <div class="card ">
+        <img src="./img/ex.jpeg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">花香調</h3>
+          <h3 class="card-title">NT880</h3>
+          <p class="card-text">
+            前調：粉紅胡椒、綠柑橘、黑醋栗<br/>
+            中調：千葉玫瑰、天竺葵<br/>
+            後調：廣藿香、白麝香、橡苔<br/>
+          </p>
+          <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="880" data-quantity="1" data-image="images/img_1.png">加入購物車</button>
         </div>
       </div>
     </div>
+
+    <div class="col-md-12 col-lg-4 col-xxl-3">
+      <div class="card ">
+        <img src="./img/果香_活潑_狗.jpg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">果香調</h3>
+          <h3 class="card-title">NT880</h3>
+          <p class="card-text">
+              前調：無花果葉<br/>
+              中調：無花果乳<br/>
+              後調：無花果木、白雪松<br/>
+          </p>
+          <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="880" data-quantity="1" data-image="images/img_2.png">加入購物車</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 col-lg-4 col-xxl-3">
+      <div class="card ">
+        <img src="./img/ex.jpeg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">奶香調</h3>
+          <h3 class="card-title">NT880</h3>
+          <p class="card-text">
+              前調：香檸檬、小荳蔻、粉紅胡椒<br/>
+              中調：茉莉、晚香玉、依蘭<br/>
+              後調：琥珀、安息香脂、椰子<br/>
+          </p>
+           <button class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="880" data-quantity="1" data-image="images/img_3.png">加入購物車</button>
+      </div>
+    </div>
+</div>
+    <div class="col-md-12 col-lg-4 col-xxl-3">
+      <div class="card ">
+        <img src="./img/木質_沈穩_藍貓.jpg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">木質調</h3>
+          <h3 class="card-title">NT880</h3>
+          <p class="card-text">
+              前調：皮革<br/>
+              中調：檀香木<br/>
+              後調：雪松、香根草<br/>
+          </p>
+          <button class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="880" data-quantity="1" data-image="images/img_4.png">加入購物車</button>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+
   </div>
+
+
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+  $(function () {
+
+    var goToCartIcon = function($addTocartBtn){
+      var $cartIcon = $(".my-cart-icon");
+      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+      $addTocartBtn.prepend($image);
+      var position = $cartIcon.position();
+      $image.animate({
+        top: position.top,
+        left: position.left
+      }, 500 , "linear", function() {
+        $image.remove();
+      });
+    }
+
+    $('.my-cart-btn').myCart({
+      currencySymbol: '$',
+      classCartIcon: 'my-cart-icon',
+      classCartBadge: 'my-cart-badge',
+      classProductQuantity: 'my-product-quantity',
+      classProductRemove: 'my-product-remove',
+      classCheckoutCart: 'my-cart-checkout',
+      affixCartIcon: true,
+      showCheckoutModal: true,
+      numberOfDecimals: 2,
+      cartItems: [
+     
+      ],
+      clickOnAddToCart: function($addTocart){
+        goToCartIcon($addTocart);
+      },
+      afterAddOnCart: function(products, totalPrice, totalQuantity) {
+        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+      },
+      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+      },
+      checkoutCart: function(products, totalPrice, totalQuantity) {
+        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+        checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+        $.each(products, function(){
+          checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+        });
+        alert(checkoutString)
+        console.log("checking out", products, totalPrice, totalQuantity);
+      },
+      getDiscountPrice: function(products, totalPrice, totalQuantity) {
+        console.log("calculating discount", products, totalPrice, totalQuantity);
+        return totalPrice * 0.5;
+      }
+    });
+
+    $("#addNewProduct").click(function(event) {
+      var currentElementNo = $(".row").children().length + 1;
+      $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+    });
+  });
+  </script>
+
 </body>
+
 </html>
