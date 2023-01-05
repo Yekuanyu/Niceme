@@ -102,8 +102,7 @@ nav li a:hover, nva li a.active{
 .badge-notify{
     background:red;
     position:relative;
-    top: -20px;
-    right: 10px;
+    top:0;
   }
   .my-cart-icon-affix {
     position: fixed;
