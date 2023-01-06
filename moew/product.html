@@ -28,7 +28,14 @@
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="product.html">Product</a></li>
       <li><a href="About us.html">About us</a></li>
-      <li><a href="#"><img src="img/cart.png" width="30" height="30" /></a></li>
+      <li class="cartitem">
+        <a href="#">
+          <img src="img/cart.png" width="30" height="30" />
+          <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
+            <span class="badge badge-notify my-cart-badge"></span>
+          </span>
+        </a>
+    </li>
     </ul>
   </header>
   <!-- bootstrap卡片rwd原型  <div class="p-5"> -->
@@ -40,14 +47,6 @@
       <p align="center">奈覓 Niceme 最好的我</p><br>
       <p align="center">“找尋氣味的秘密，遇見最好的自己。”</p><br>
       <p align="center">透過香水間綻放自我的獨特性</p>
-
-
-      <div class="page-header">
-        <div style="float: right; cursor: pointer;">
-          <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span
-              class="badge badge-notify my-cart-badge"></span></span>
-        </div>
-      </div>
 
       <div class="row">
         <div class="col-md-12 col-lg-4 col-xxl-3">
@@ -135,7 +134,7 @@
           var position = $cartIcon.position();
           $image.animate({
             top: position.top,
-            left: position.left
+            right: position.right
           }, 500, "linear", function () {
             $image.remove();
           });

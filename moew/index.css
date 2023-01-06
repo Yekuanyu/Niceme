@@ -98,11 +98,16 @@ nav li a:hover, nva li a.active{
     right: 0px;
     margin-right: 60px;
 }
+.cartitem{
+    position: relative;
+}
 
 .badge-notify{
     background:red;
-    position:relative;
-    top:0;
+    position:absolute;
+    top: -5px;
+    right: 5px;
+    border-radius: 50%;
   }
   .my-cart-icon-affix {
     position: fixed;
