@@ -97,9 +97,6 @@ nav li a:hover, nva li a.active{
     right: 0px;
     margin-right: 60px;
 }
-.cartitem{
-    position: relative;
-}
 
 .badge-notify{
     background:red;
