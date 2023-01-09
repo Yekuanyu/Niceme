@@ -42,7 +42,6 @@ header{
     border-radius: 50px;
 }
 nav li a:hover, nva li a.active{
-    background: #112434;
     color: #fff;
 }
 .parallax{
@@ -94,7 +93,7 @@ nav li a:hover, nva li a.active{
 
 .navbar{
     position: absolute;
-    top: 35px; 
+    top: 25px; 
     right: 0px;
     margin-right: 60px;
 }

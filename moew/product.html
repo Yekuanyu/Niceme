@@ -27,15 +27,23 @@
 
 
 <body>
-  <header>
-    <a href="index.html" class="logo">Niceme</a>
-    <ul class="nav">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="product.html">Product</a></li>
-      <li><a href="About us.html">About us</a></li>
-      <li >
-        <a href="#">
-          <img src="img/cart.png" width="30" height="30" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+  crossorigin="anonymous"></script>
+<header>
+  <a href="index.html" class="logo">Niceme</a>
+  <nav class="navbar navbar-expand-lg p-3">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-black" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="product.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="About us.html">About us</a></li>
+        <li class="nav-item"><a href="product.html"><img src="img/cart.png" width="30" height="30" /></a></li>
           <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
             <span class="badge badge-notify my-cart-badge"></span>
           </span>
