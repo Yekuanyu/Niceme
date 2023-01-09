@@ -104,9 +104,9 @@ nav li a:hover, nva li a.active{
 
 .badge-notify{
     background:red;
-    position:absolute;
-    top: -5px;
-    right: 5px;
+    position:fixed;
+    top: 30px;
+    right: 60px;
     border-radius: 50%;
   }
   .my-cart-icon-affix {

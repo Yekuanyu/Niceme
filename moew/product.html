@@ -28,7 +28,7 @@
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="product.html">Product</a></li>
       <li><a href="About us.html">About us</a></li>
-      <li class="cartitem">
+      <li >
         <a href="#">
           <img src="img/cart.png" width="30" height="30" />
           <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
@@ -134,7 +134,7 @@
           var position = $cartIcon.position();
           $image.animate({
             top: position.top,
-            right: position.right
+            left: position.left
           }, 500, "linear", function () {
             $image.remove();
           });
