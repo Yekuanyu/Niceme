@@ -224,14 +224,14 @@
         '<div class="modal-content">' +
         '<div class="modal-header">' +
         '<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
-        '<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</h4>' +
+        '<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-shopping-cart"></span> 我的購物車</h4>' +
         '</div>' +
         '<div class="modal-body">' +
         '<table class="table table-hover table-responsive" id="' + idCartTable + '"></table>' +
         '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>' +
-        '<button type="button" class="btn btn-primary ' + classCheckoutCart + '">Checkout</button>' +
+        '<button type="button" class="btn btn-default" data-bs-dismiss="modal">關閉</button>' +
+        '<button type="button" class="btn btn-primary ' + classCheckoutCart + '">結帳</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -261,13 +261,13 @@
       $cartTable.append(products.length ?
         '<tr>' +
         '<td></td>' +
-        '<td><strong>Total</strong></td>' +
+        '<td><strong>總價</strong></td>' +
         '<td></td>' +
         '<td></td>' +
         '<td class="text-right"><strong id="' + idGrandTotal + '"></strong></td>' +
         '<td></td>' +
         '</tr>' :
-        '<div class="alert alert-danger" role="alert" id="' + idEmptyCartMessage + '">Your cart is empty</div>'
+        '<div class="alert alert-danger" role="alert" id="' + idEmptyCartMessage + '">你的購物車是空的</div>'
       );
 
       var discountPrice = options.getDiscountPrice(products, ProductManager.getTotalPrice(), ProductManager.getTotalQuantity());
@@ -275,7 +275,7 @@
         $cartTable.append(
           '<tr style="color: red">' +
           '<td></td>' +
-          '<td><strong>Total (including discount)</strong></td>' +
+          '<td><strong>全品項打九折</strong></td>' +
           '<td></td>' +
           '<td></td>' +
           '<td class="text-right"><strong id="' + idDiscountPrice + '"></strong></td>' +
