@@ -9,8 +9,8 @@ server.use(bodyParser.urlencoded());
 server.use(bodyParser.json());
 
 var DB = require("nedb-promises");       //定義資料庫
-var PortfolioDB = DB.create("portfolio.db");
-PortfolioDB.insert([
+var portfolioDB = DB.create("portfolio.db");
+portfolioDB.insert([
     {
         id: "portfolio1",
          imgSrc: "./img/羽辰.jpg",
@@ -23,14 +23,14 @@ PortfolioDB.insert([
          imgSrc: "./img/K.jpg",
          number: "1410922015",
          name: "葉冠郁",
-         slogan: "網站程式製作＆優化/網站發想/介面設計/簡報製作",
+         work: "工作內容：網站程式製作＆優化/網站發想/介面設計/簡報製作",
      },
     {
          id: "portfolio3",
          imgSrc: "./img/地瓜.jpg",
         number: "1410922016",
         name: "廖芷瑩",
-        slogan: "插畫繪製/小動圖製作/商品設計/簡報製作",
+        work: "工作內容：插畫繪製/小動圖製作/商品設計/簡報製作",
      },
  ])
 var Games = DB.create("game.db");
@@ -65,7 +65,7 @@ server.get("/contact", function(req, res){
  
 server.post("/contact", function(req, res){
     console.log(req.body);
-    ContactDB.insert(req.body);     //加入資料庫
+    portfolioDB.insert(req.body);     //加入資料庫
     res.redirect("/index Vue.html");  //找檔案時只需要找index.html
 })
 
