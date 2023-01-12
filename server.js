@@ -9,8 +9,39 @@ server.use(bodyParser.urlencoded());
 server.use(bodyParser.json());
 
 var DB = require("nedb-promises");       //定義資料庫
-var ContactDB = DB.create("contact.db"); //定義資料庫 ContactDB為自命名
-
+var PortfolioDB = DB.create("portfolio.db");
+PortfolioDB.insert([
+    {
+        id: "Product1",
+         imgSrc: "./img/花香_貓.jpg",
+        title: "花香調",
+         price: "NT880",
+         slogan: "前調：粉紅胡椒、綠柑橘、黑醋栗<br/>中調：千葉玫瑰、天竺葵<br/>後調：廣藿香、白麝香、橡苔<br/>",
+     },
+    {
+         id: "Product2",
+         imgSrc: "./img/果香_活潑_狗.jpg",
+         title: "果香調",
+         price: "NT880",
+         slogan: "前調：無花果葉<br/>中調：無花果乳<br/>後調：無花果木、白雪松<br/>",
+     },
+    {
+         id: "Product3",
+         imgSrc: "./img/麝香_兔.jpg",
+        title: "麝香調",
+         price: "NT880",
+        slogan: "前調：香檸檬、小荳蔻、粉紅胡椒<br/>中調：茉莉、晚香玉、依蘭<br/>後調：琥珀、安息香脂、椰子<br/>",
+     },
+   {
+        id: "Product4",
+        imgSrc: "./img/木質_沈穩_藍貓.jpg",
+         title: "木質調",
+         price: "NT880",
+         slogan: "前調：皮革<br/>中調：檀香木<br/>後調：雪松、香根草<br/>",
+    },
+ ])
+var Games = DB.create("game.db");
+Games.ensureIndex({fieldName:"id", unique:true});
 
 server.get("/service", function(req, res){
 
@@ -24,18 +55,15 @@ server.get("/service", function(req, res){
 
 server.get("/portfolio", function(req, res){
     
-    portfolios= [
-        { href: "#portfolioModal1", imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", text: "Graphic Design" },
-        { href: "#portfolioModal2", imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", text: "Website Design" },
-        { href: "#portfolioModal3", imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", text: "Website Design" },
-        { href: "#portfolioModal1", imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", text: "Graphic Design" },
-        { href: "#portfolioModal2", imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", text: "Website Design" },
-        { href: "#portfolioModal3", imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", text: "Website Design" }
-    ]
-   res.send(portfolios);
+    PortfolioDB.find({}).then(results => {
+        if(results !=null){
+            res.send(results);
+        }else{
+            res.send("Error!")
+        }
+    }) 
+    
 })
-
-
 
 server.get("/contact", function(req, res){
     res.send("");
