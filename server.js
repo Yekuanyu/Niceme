@@ -12,33 +12,26 @@ var DB = require("nedb-promises");       //定義資料庫
 var PortfolioDB = DB.create("portfolio.db");
 PortfolioDB.insert([
     {
-        id: "Product1",
-         imgSrc: "./img/花香_貓.jpg",
-        title: "花香調",
-         price: "NT880",
-         slogan: "前調：粉紅胡椒、綠柑橘、黑醋栗<br/>中調：千葉玫瑰、天竺葵<br/>後調：廣藿香、白麝香、橡苔<br/>",
+        id: "portfolio1",
+         imgSrc: "./img/羽辰.jpg",
+         number: "1410922012",
+         name: "洪羽辰",
+         work: "工作內容：網站程式製作/企劃書製作/報告",
      },
     {
-         id: "Product2",
-         imgSrc: "./img/果香_活潑_狗.jpg",
-         title: "果香調",
-         price: "NT880",
-         slogan: "前調：無花果葉<br/>中調：無花果乳<br/>後調：無花果木、白雪松<br/>",
+         id: "portfolio2",
+         imgSrc: "./img/K.jpg",
+         number: "1410922015",
+         name: "葉冠郁",
+         slogan: "網站程式製作＆優化/網站發想/介面設計/簡報製作",
      },
     {
-         id: "Product3",
-         imgSrc: "./img/麝香_兔.jpg",
-        title: "麝香調",
-         price: "NT880",
-        slogan: "前調：香檸檬、小荳蔻、粉紅胡椒<br/>中調：茉莉、晚香玉、依蘭<br/>後調：琥珀、安息香脂、椰子<br/>",
+         id: "portfolio3",
+         imgSrc: "./img/地瓜.jpg",
+        number: "1410922016",
+        name: "廖芷瑩",
+        slogan: "插畫繪製/小動圖製作/商品設計/簡報製作",
      },
-   {
-        id: "Product4",
-        imgSrc: "./img/木質_沈穩_藍貓.jpg",
-         title: "木質調",
-         price: "NT880",
-         slogan: "前調：皮革<br/>中調：檀香木<br/>後調：雪松、香根草<br/>",
-    },
  ])
 var Games = DB.create("game.db");
 Games.ensureIndex({fieldName:"id", unique:true});

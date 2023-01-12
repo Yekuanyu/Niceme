@@ -1,4 +1,3 @@
-{"id":"Product1","imgSrc":"./img/花香_貓.jpg","title":"花香調","price":"NT880","slogan":"前調：粉紅胡椒、綠柑橘、黑醋栗<br/>中調：千葉玫瑰、天竺葵<br/>後調：廣藿香、白麝香、橡苔<br/>","_id":"fqzZTtWPnaelXrje"}
-{"id":"Product2","imgSrc":"./img/果香_活潑_狗.jpg","title":"果香調","price":"NT880","slogan":"前調：無花果葉<br/>中調：無花果乳<br/>後調：無花果木、白雪松<br/>","_id":"rrOqhsq43E8Wbst1"}
-{"id":"Product3","imgSrc":"./img/麝香_兔.jpg","title":"麝香調","price":"NT880","slogan":"前調：香檸檬、小荳蔻、粉紅胡椒<br/>中調：茉莉、晚香玉、依蘭<br/>後調：琥珀、安息香脂、椰子<br/>","_id":"Yhc3ezw1LJisGicP"}
-{"id":"Product4","imgSrc":"./img/木質_沈穩_藍貓.jpg","title":"木質調","price":"NT880","slogan":"前調：皮革<br/>中調：檀香木<br/>後調：雪松、香根草<br/>","_id":"GRGjPg7MDN6b6C3g"}
+{"id":"portfolio1","imgSrc":"./img/羽辰.jpg","nuber":"1410922012","name":"洪羽辰","work":"工作內容：網站程式製作/企劃書製作/報告","_id":"3gFtNAc5cFiqPglL"}
+{"id":"portfolio2","imgSrc":"./img/K.jpg","nuber":"1410922015","name":"葉冠郁","slogan":"網站程式製作＆優化/網站發想/介面設計/簡報製作","_id":"U3AbBjE2ZQNLK2Gn"}
+{"id":"portfolio3","imgSrc":"./img/地瓜.jpg","nuber":"1410922016","name":"廖芷瑩","slogan":"插畫繪製/小動圖製作/商品設計/簡報製作","_id":"1GWaS8LxQ7ok1qLX"}
